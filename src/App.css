@@ -1,45 +1,62 @@
 /*general*/
-body{
+body {
   margin: 0;
 }
+
+html,
+body {
+  height: 100%;
+}
+
 /*components*/
 .App {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   justify-content: center;
+  align-items: center;
 }
+
 /*html elements*/
-a{
+a {
   text-decoration: none;
 }
 
-.header{
+header {
   width: 100%;
   background-color: orange;
   color: white;
 }
 
-.header h1{
+header h1 {
   font-size: xx-large;
 }
 
-.header p{
-  margin-top: 0px;
-  margin-bottom: 0px;
+header p {
+  margin: 0;
 }
 
-.nav{
+.nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.nav p{
+.nav p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: orange;
+  text-align: center;
+}
+
 /*interaction*/
-.normal{
+.normal {
   background-color: white;
   color: black;
   width: 32%;
@@ -47,24 +64,25 @@ a{
   transition: all .3s ease;
 }
 
-.focus{
+.focus {
   background-color: orange;
   color: white;
   width: 36%;
   height: 30px;
   transition: all .3s ease;
 }
+
 /*positioning*/
-.col{
+.col {
   display: flex;
   flex-direction: column;
 }
 
-.row{
+.row {
   display: flex;
   flex-direction: row;
 }
 
-.center{
+.center {
   margin: auto;
 }

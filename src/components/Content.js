@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Helper from './Helper'
 
 function Content(props) {
     const [rdy, setState] = useState([])
@@ -44,6 +45,7 @@ function Content(props) {
                             ))}
                         </tbody>
                     </table>
+                    <Helper />
                 </div>
             )
         case 'todo':
@@ -70,6 +72,7 @@ function Content(props) {
                             ))}
                         </tbody>
                     </table>
+                    <Helper />
                 </div>
             )
         case 'propose':
@@ -87,11 +90,15 @@ function Content(props) {
                             autoComplete='off' type='text' placeholder='Tono (opcional)' />
                         <button className='center' action='submit'>Enviar</button>
                     </form>
+                    <Helper />
                 </div>
             )
         default:
             return (
-                <div>Elegir alguna de las acciones</div>
+                <div>
+                    Elegir alguna de las acciones
+                    <Helper />
+                </div>
             )
     }
 }
