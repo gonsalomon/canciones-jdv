@@ -1,0 +1,99 @@
+/*general*/
+body {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/*components*/
+.App {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/*html elements*/
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  border: 1px solid black;
+  width: 100%;
+  background-color: orange;
+  color: white;
+}
+
+header h1 {
+  font-size: xx-large;
+}
+
+header p {
+  margin: 0;
+}
+
+.cnt {
+  position: sticky;
+  color: black;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: orange;
+  text-align: center;
+}
+
+/*interaction*/
+.normal {
+  background-color: white;
+  color: black;
+  width: 32%;
+  height: 20px;
+  transition: all .3s ease;
+}
+
+.focus {
+  background-color: orange;
+  color: white;
+  width: 36%;
+  height: 30px;
+  transition: all .3s ease;
+}
+
+/*positioning*/
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.center {
+  margin: auto;
+}
+
+.even {
+  justify-content: space-around;
+}
